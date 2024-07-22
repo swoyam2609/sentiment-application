@@ -1,5 +1,6 @@
 import csv
 import re
+import random
 
 def parseTextToCSV(input: str):
     lines = input.strip().split('\n')
@@ -18,10 +19,10 @@ def parseTextToCSV(input: str):
             data[-1][-1] += ' ' + line.strip()
 
     # Writing to a CSV file
-    csv_file = 'conversation.csv'
-    with open(csv_file, 'w', newline='') as file:
+    csvFile = f'uploaded_files/conversation{random.randint(0,100)}.csv'
+    with open(csvFile, 'w', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(['Agent/Customer', 'Time', 'Message'])
         writer.writerows(data)
 
-    return csv_file
+    return csvFile

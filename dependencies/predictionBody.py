@@ -29,5 +29,11 @@ def formBody(input: pd.DataFrame):
     predictions['positive'] /=count
     predictions['neutral'] /=count
     predictions['negative'] /=count
-    return body, predictions
+
+    responseBody = {
+        "overallResult":predictions,
+        "individualResult":body
+
+    }
+    return responseBody
 

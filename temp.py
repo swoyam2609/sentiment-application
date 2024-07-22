@@ -13,9 +13,6 @@ import pandas as pd
 
 dataCsv = pd.read_csv(data)
 
-dataBody, dataResult = predictionBody.formBody(dataCsv)
+dataBody = predictionBody.formBody(dataCsv)
 
 print(dataBody)
-print()
-print()
-print(dataResult)
