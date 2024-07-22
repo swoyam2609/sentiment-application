@@ -2,7 +2,7 @@ from dependencies import textToCsv
 from dependencies import textClassification
 from dependencies import predictionBody
 
-filePath = "transcripts/Alekya bad call 20th.txt"
+filePath = "transcripts/Udaya Good call 20th.txt"
 
 with open(file=filePath, mode='r') as file:
     content = file.read()

@@ -1,4 +1,5 @@
 /venv
 /transcripts
-/dependencies/__pycache__
+**/__pycache__
 /conversation.csv
+/uploaded_files/*
