@@ -1,12 +1,15 @@
+# importing the necessay dependencies
 import csv
 import re
 import random
 
+# function to convert from txt file to required csv file
 def parseTextToCSV(input: str):
     lines = input.strip().split('\n')
     iterator = iter(lines)
     data = []
 
+    # iterating through conversation and matching regex
     for line in iterator:
         if line.startswith('['):
             match = re.match(r'\[(.+) (\d+:\d+)\]', line)
