@@ -1,2 +1,4 @@
 /venv
 /transcripts
+/dependencies/__pycache__
+/conversation.csv
